@@ -8,7 +8,9 @@ Written in JavaScript, jQuery, HTML, CSS
  * Calculator
  * version : 1.0.0
  * author : Symsey Cruz
- * license :
+ * license : GNU GPLv3
+ 
+-------------------------------------------------------------------------------------------
 
  * Credits to Adam Draper
  * I did some modification inside my main file
@@ -16,8 +18,9 @@ Written in JavaScript, jQuery, HTML, CSS
  * unfortunately it round up my decimal values so
  * I made a new algorithm before I pass it here.
 
+-------------------------------------------------------------------------------------------
 
- * Credits Vadim Sikora
+ * Credits to Vadim Sikora
  * This plugin is superb although I had a hard time tweaking it from the start
  * jQuery that formats my number fontsize to fit inside my textview
  * This works only on keyup events so I had to call textview keyup function
