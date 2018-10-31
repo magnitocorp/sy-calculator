@@ -1,4 +1,4 @@
-# web-calculator
+# sy-calculator
 Simple calculator that solves basic operator written in JavaScript using web browser.
 Try it https://magnitocorp.github.io/sy-calculator/
 
