@@ -1,6 +1,6 @@
 # web-calculator
 Simple calculator that solves basic operator written in JavaScript using web browser.
-Try it [SY-CALCULATOR](https://magnitocorp.github.io/sy-calculator/)
+Try it [WEB-CALCULATOR](https://magnitocorp.github.io/web-calculator/)
 
 Written in JavaScript, jQuery, HTML, CSS
 10/19/2018
