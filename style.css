@@ -1,0 +1,119 @@
+/*! @preserve
+ * Calculator / style.css
+ * version : 1.0.0
+ * author : Symsey Cruz
+ * license :
+ *
+ */
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:300');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+::-webkit-scrollbar {
+  width: 1px;
+  height: 1px;
+}
+
+::-webkit-scrollbar-button {
+  width: 1px;
+  height: 1px;
+}
+
+.table{
+    border-collapse: collapse;
+    border: 0px;
+    border-left: 1px solid;
+    margin-left: 2px;
+    margin-top: -5px;
+    border-bottom: 1px solid #848484;
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.button{
+    height:75px;
+    width:75px;
+    font-size:40px;
+    margin:  0px;
+    cursor: pointer;
+    padding: 0px;
+    border-right: 1px solid #848484;
+    border-top: 1px solid #848484;
+    border-bottom: 0px;
+    border-left: 0px;
+    background-color: #4f4f4f;
+    color: white;
+
+
+}
+
+.button:hover{
+    background-color: orange;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+}
+
+#num {
+    background-color: #232323;
+    color: white;
+
+}
+
+#num:hover {
+    background-color: #4f4f4f;
+    color: white;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+
+}
+
+.textview{
+    width:279px;
+    height:60px;
+    font-size:55px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    text-align: right;
+    margin:2px;
+    margin-bottom: 0px;
+    border: 1px solid #232323;
+    border-right: 1px solid #848484;
+    border-top: none;
+    background-color: #848484;
+    color: white;
+    display: flex;
+    cursor: pointer;
+
+
+}
+
+.view_history{
+    width:281px;
+    height:50px;
+    padding-right: 15px;
+    padding-left: 4px;
+    font-size:18px;
+    margin-left: 2px;
+    color: #cecece;
+    background-color: #848484;
+    float: left;
+    text-align: right;
+    border-left: 1px solid #232323;
+    border-top: 1px solid #232323;
+    word-wrap: break-word;
+    overflow-y: auto;
+    display: flex;
+    line-height: 25px;
+    flex-direction: column-reverse;
+
+
+}

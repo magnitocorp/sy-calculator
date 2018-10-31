@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+/*! @preserve
+ * Calculator
+ * version : 1.0.0
+ * author : Symsey Cruz
+ * license :
+ *
+ */
+-->
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="libraries/calculate.js"></script>
+	<script type="text/javascript" src="libraries/jquery.inputfit.js"></script>
+	<script type="text/javascript" src="libraries/numeral.min.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('#textview').inputfit();
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<form name="form" class="view-form" style="width:400px;">
+		<br style="clear:both;" />
+		<label id="lbl" class="view_history" name="view_history"></label>
+		<input id="textview" type="text" class="textview" name="textview" value="0" readonly autofocus autocomplete="off" onkeyup="listen()" onkeypress="disableEnter()" onblur="this.focus()">
+	</form>
+
+	<table class="table">
+		<tr>
+			<td><input class="button" type="button" value="&#8676;" onclick="backspace( true )"></td>
+			<td><input class="button" type="button" value="&#247;" onclick="solve( '/', true )"></td>
+			<td><input class="button" type="button" value="x" onclick="solve( '*', true )"></td>
+			<td><input class="button" type="button" value="-" onclick="solve( '-', true )"></td>
+		</tr>
+		<tr>
+			<td><input id="num" class="button" type="button" value="7" onclick="insert( 7, true )"></td>
+			<td><input id="num" class="button" type="button" value="8" onclick="insert( 8, true )"></td>
+			<td><input id="num" class="button" type="button" value="9" onclick="insert( 9, true )"></td>
+			<td rowspan="2"><input class="button" type="button" style="height: 150px;" value="+" onclick="solve( '+', true )"></td>
+		</tr>
+		<tr>
+			<td><input id="num" class="button" type="button" value="4" onclick="insert( 4, true )"></td>
+			<td><input id="num" class="button" type="button" value="5" onclick="insert( 5, true )"></td>
+			<td><input id="num" class="button" type="button" value="6" onclick="insert( 6, true )"></td>
+		</tr>
+		<tr>
+			<td><input id="num" class="button" type="button" value="1" onclick="insert( 1, true )"></td>
+			<td><input id="num" class="button" type="button" value="2" onclick="insert( 2, true )"></td>
+			<td><input id="num" class="button" type="button" value="3" onclick="insert( 3, true )"></td>
+			<td rowspan="2"><input class="button" type="button" style="height: 150px;" value="=" onclick="total( true )"></td>
+		</tr>
+		<tr>
+			<td colspan=2><input id="num" class="button" type="button" style="width: 150px;" value="0" onclick="insert( 0, true )"></td>
+			<td><input class="button" type="button" value="." onclick="insert('.', true)"></td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
